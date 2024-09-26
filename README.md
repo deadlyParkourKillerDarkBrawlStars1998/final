@@ -1,1 +1,1 @@
-<a href="file:///C:/Users/%D0%BF%D0%BE%D0%BB%D0%B8%D0%BD%D0%B0/Desktop/gegege/src/index.html">проверить</a>
+<a href="https://deadlyparkourkillerdarkbrawlstars1998.github.io/final/">проверить</a>
