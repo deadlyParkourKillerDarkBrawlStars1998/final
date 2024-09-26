@@ -1,1 +1,1 @@
-Проверить <a href='https://deadlyparkourkillerdarkbrawlstars1998.github.io/final/'>здесь</a>
+<a href="https://github.com/deadlyParkourKillerDarkBrawlStars1998/final.git">Проверка</a>
