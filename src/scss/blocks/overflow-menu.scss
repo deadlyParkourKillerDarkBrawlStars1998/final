@@ -1,0 +1,107 @@
+.overflow-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 16px;
+  display: flex;
+  overflow-x: hidden;
+  height: 40px;
+  background-color: $background-color_1;
+
+  @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+    margin-bottom: 0;
+    padding-block-start: 0;
+    padding-block-end: 32px;
+    padding-left: 24px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    overflow-x: initial;
+    flex-wrap: wrap;
+    padding-left: 32px;
+    height: auto;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 24px;
+    height: 40px;
+    background: linear-gradient(
+      to right,
+      rgba(248, 248, 248, 0),
+      rgba(248, 248, 248, 1)
+    );
+  }
+
+  &__item {
+    width: auto;
+    border: 2px solid #f8f8f8;
+    border-radius: 6px;
+    padding: 8px 13px;
+    text-wrap: nowrap;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    background-color: $background-color_1;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    @media screen and (min-width: 1440px) {
+      padding-top: 6px;
+      padding-right: 18px;
+      padding-bottom: 6px;
+      padding-left: 18px;
+    }
+
+    &:focus {
+      border-color: $border-color_2;
+      background-color: $background-color_2;
+    }
+    &:hover {
+      border-color: $border-color_2;
+      background-color: $background-color_2;
+    }
+    &:active {
+      border-color: $border-color_2;
+      background-color: $background-color_2;
+    }
+  }
+
+  &__item-additional {
+    @media screen and (min-width: 1440px) {
+      display: none;
+    }
+  }
+  &__highres-order-1 {
+    @media screen and (min-width: 1440px) {
+      order: 1;
+    }
+  }
+  &__highres-order-2 {
+    @media screen and (min-width: 1440px) {
+      order: 2;
+    }
+  }
+  &__highres-order-3 {
+    @media screen and (min-width: 1440px) {
+      order: 3;
+    }
+  }
+  &__highres-order-4 {
+    @media screen and (min-width: 1440px) {
+      order: 4;
+    }
+  }
+  &__highres-order-5 {
+    @media screen and (min-width: 1440px) {
+      order: 5;
+    }
+  }
+  &__highres-order-6 {
+    @media screen and (min-width: 1440px) {
+      order: 6;
+    }
+  }
+}

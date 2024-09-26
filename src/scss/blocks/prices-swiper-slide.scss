@@ -1,0 +1,212 @@
+.prices-swiper-slide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0 !important;
+  padding: 16px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  min-width: 240px;
+  max-width: 310px;
+  flex: 1;
+  height: 200px;
+  justify-content: space-between;
+  border-radius: 6px;
+  color: $color_2;
+  background-color: $background-color_2;
+  text-decoration: none;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: auto;
+  }
+
+  &__service {
+    max-width: 208px;
+
+    &--swiper-off {
+      @media screen and (min-width: 768px) {
+        max-width: none;
+        width: 340px;
+      }
+    }
+  }
+
+  &__price {
+    &--swiper-off {
+      @media screen and (min-width: 768px) {
+        width: 10%;
+      }
+    }
+  }
+
+  &__time {
+    &--swiper-off {
+      @media screen and (min-width: 768px) {
+        width: 12%;
+      }
+    }
+  }
+
+  &__text {
+    margin: 0;
+    margin-right: auto;
+    margin-bottom: auto;
+    font-size: 14px;
+    line-height: 18px;
+
+    &--swiper-off {
+      @media screen and (min-width: 768px) {
+        margin-top: 7px;
+        margin-bottom: 7px;
+      }
+    }
+  }
+
+  &__order {
+    width: 119px;
+    height: 32px;
+    background-color: $background-color_7;
+    border-radius: 16px;
+    text-decoration: none;
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+
+    &:hover {
+      opacity: 0.9;
+
+      .prices-swiper-slide__order-text::before,
+      .prices-swiper-slide__order-text::after {
+        left: 95px;
+      }
+    }
+
+    &--swiper-off {
+      @media screen and (min-width: 768px) {
+        position: relative;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+
+  &__spacer {
+    width: 119px;
+    height: 32px;
+
+    &--swiper-off {
+      @media screen and (min-width: 768px) {
+        width: 119px;
+      }
+    }
+  }
+
+  &__info-slide {
+    color: $color_1;
+    background-color: $background-color_1;
+    font-size: 14px;
+    line-height: 18px;
+
+    position: relative;
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0 !important;
+    padding: 16px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    min-width: 240px;
+    max-width: 310px;
+    flex: 1;
+    height: 200px;
+    justify-content: space-between;
+    border-radius: 6px;
+    text-decoration: none;
+
+    &--swiper-off {
+      @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: none;
+        box-sizing: border-box;
+        height: 64px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        gap: 0;
+      }
+    }
+  }
+
+  &__order-text {
+    margin: 0;
+    margin-left: 12px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    color: $background-color_2;
+    letter-spacing: -0.15px;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 550;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      transform: rotate(45deg);
+      left: 92px;
+      top: 12.5px;
+      width: 8px;
+      height: 3px;
+      background-color: $background-color_2;
+      border-radius: 1.5px 0 0 1.5px;
+      transition: all 0.2s;
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      transform: rotate(-45deg);
+      left: 92px;
+      top: 16.5px;
+      width: 8px;
+      height: 3px;
+      background-color: $background-color_2;
+      border-radius: 1.5px 0 0 1.5px;
+      transition: all 0.2s;
+    }
+  }
+
+  &__info {
+    margin: 0;
+    margin-bottom: 4px;
+    color: $color_1;
+    font-size: 14px;
+    line-height: 16px;
+
+    &--swiper-off {
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+    }
+  }
+
+  &--swiper-off {
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      width: 100%;
+      max-width: none;
+      box-sizing: border-box;
+      height: 64px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      gap: 0;
+    }
+  }
+}

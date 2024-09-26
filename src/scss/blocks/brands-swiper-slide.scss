@@ -1,0 +1,39 @@
+.brands-swiper-slide {
+  display: flex;
+  margin-right: 0 !important;
+  padding: 16px;
+  box-sizing: border-box;
+  min-width: 240px;
+  max-width: 310px;
+  flex: 1;
+  height: 72px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  background-color: $background-color_2;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
+  }
+
+  &__logo {
+    display: block;
+  }
+
+  &__arrow {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: 0;
+    margin-top: auto;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    .brands-swiper-slide__arrow {
+      margin-right: -8px;
+    }
+  }
+}

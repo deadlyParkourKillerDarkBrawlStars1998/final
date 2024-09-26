@@ -1,0 +1,26 @@
+.side-menu-wrapper {
+  display: block;
+  position: absolute;
+  transform: translateX(-400px);
+  overflow-x: visible;
+
+  z-index: 10001;
+  max-width: 360px;
+  width: 100%;
+  height: 2000px;
+
+  transition: all 0.3s;
+
+  @media screen and (min-width: 1440px) {
+    z-index: 9998;
+    display: block;
+    width: 308px;
+    position: static;
+    height: auto;
+    transform: none;
+  }
+
+  &--modal-open {
+    transform: none;
+  }
+}

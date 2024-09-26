@@ -1,0 +1,119 @@
+.footer {
+  background-color: $background-color_1;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    @media screen and (min-width: 768px) {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+
+  &__section-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__section-2 {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      gap: 32px;
+    }
+  }
+
+  &__warning {
+    font-size: 14px;
+    line-height: 20px;
+    color: $color_2;
+    margin-top: 4px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      max-width: 425px;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color_1;
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+      width: 33%;
+    }
+
+    &:first-child {
+      @media screen and (min-width: 768px) {
+        text-align: start;
+      }
+    }
+
+    &:last-child {
+      @media screen and (min-width: 768px) {
+        text-align: end;
+      }
+    }
+  }
+
+  &__get-offer {
+    display: inline;
+    position: relative;
+    width: auto;
+    border: none;
+    background-color: $background-color_1;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: $color_2;
+    font-weight: 450;
+    text-align: start;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  &__last-word {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      transform: rotate(45deg);
+      left: 110px;
+      top: 9.5px;
+      width: 8px;
+      height: 2px;
+      background-color: $background-color_7;
+      border-radius: 1.5px 0 0 1.5px;
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      transform: rotate(-45deg);
+      left: 110px;
+      top: 13.5px;
+      width: 8px;
+      height: 2px;
+      background-color: $background-color_7;
+      border-radius: 1.5px 0 0 1.5px;
+    }
+  }
+}
